@@ -1,0 +1,11 @@
+browser:
+  headful: false
+  slow_mo_ms: 50
+
+output:
+  save_html: false
+  csv_delimiter: ","
+
+retry:
+  max_attempts: 3
+  backoff_sec: 2

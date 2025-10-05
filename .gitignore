@@ -1,0 +1,6 @@
+.venv/
+out/
+.env
+.idea/
+__pycache__/
+config/presets/

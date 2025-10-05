@@ -1,4 +1,4 @@
-#!/Users/macbookpro/Projects/universal_web_scraper/.venv/bin/python3.11
+#!/Users/macbookpro/Projects/universal_web_scraper/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
