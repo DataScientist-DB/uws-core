@@ -124,7 +124,7 @@ def run(args, cfg) -> List[Dict]:
 
         ctx.close()
 
-    if not rows:
+    if not rows and os.getenv("UWS_ALLOW_DEMO","0")=="1":
         # Fallback so the pipeline completes even if blocked
         rows = [
             {"query": q, "title": "Sample Teacher", "company": "Demo Unified", "location": location, "url": "https://example.com/a", "page": 1},

@@ -87,7 +87,7 @@ def run(args, cfg) -> List[Dict]:
 
         ctx.close()
 
-    if not rows:
+    if not rows and os.getenv("UWS_ALLOW_DEMO","0")=="1":
         rows = [
             {"term": "demo", "name": "Sample Business A", "url": "https://example.com/a", "location": location, "page": 1},
             {"term": "demo", "name": "Sample Business B", "url": "https://example.com/b", "location": location, "page": 1},
